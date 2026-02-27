@@ -1,0 +1,17 @@
+num = int(input("Введите число: "))  # ✅ Всё хорошо, int() преобразует строку в число
+flag = False
+
+if num % 2 == 0:  # ✅ Корректное условие
+    print("Число четное")
+    flag = True
+else:
+    print("Число нечетное")
+
+name = input("Введите свое имя: ")  # ✅ Просто строка, без int()
+
+if flag:
+    end_message = "чётное"
+else:
+    end_message = "нечётное"
+
+print(name, "ввёл", end_message)
